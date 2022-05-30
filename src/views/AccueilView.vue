@@ -27,6 +27,16 @@
       <UsersIcon class="w-8" ></UsersIcon> 
     </div>
 
+<Card
+nom="Buju BANTON"
+image="../public/artiste/Buju.png"
+
+></Card>
+
+<Card2
+nom="Sheensea"
+image="../public/artiste/sheensea.png"
+></Card2>
 
   </main>
 </template>
@@ -35,7 +45,9 @@
 import HeaderView from "../components/HeaderView.vue";
 import BouttonView from "../components/BouttonView.vue";
 import {LocationMarkerIcon , UsersIcon, } from "@heroicons/vue/solid";
+import Card from '../components/Card.vue';
+import Card2 from '../components/Card2.vue';
 export default {
-  components: { HeaderView, BouttonView,LocationMarkerIcon,UsersIcon },
+  components: { HeaderView, BouttonView,LocationMarkerIcon,UsersIcon, Card , Card2 },
 };
 </script>
