@@ -2,6 +2,7 @@
 <div class="  flex 
               justify-end
               p-2">
+              
   <div class="relative 
               inline-block 
               items-center 
@@ -10,6 +11,8 @@
              bg-gris 
               p-7 
               py-2.5 
+              font-inter
+              font-bold
               text-center
              text-yellow-400">
     <p><slot /></p>
