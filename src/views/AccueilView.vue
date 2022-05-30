@@ -57,6 +57,7 @@ image="../public/artiste/sheensea.png"
   </div>
 
     <BouttonView> En savoir plus </BouttonView>
+    <FooterView/>
 
   </main>
 </template>
@@ -67,7 +68,8 @@ import BouttonView from "../components/BouttonView.vue";
 import {LocationMarkerIcon , UsersIcon,ClockIcon,QuestionMarkCircleIcon } from "@heroicons/vue/solid";
 import Card from '../components/Card.vue';
 import Card2 from '../components/Card2.vue';
+import FooterView from "../components/FooterView.vue";
 export default {
-  components: { HeaderView, BouttonView, Card , Card2, LocationMarkerIcon, UsersIcon, ClockIcon,QuestionMarkCircleIcon },
+  components: { HeaderView, FooterView, BouttonView, Card, Card2, LocationMarkerIcon, UsersIcon, ClockIcon, QuestionMarkCircleIcon,  },
 };
 </script>
