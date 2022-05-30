@@ -1,19 +1,41 @@
 <template>
+  <header>
+    <HeaderView />
+  </header>
 
- <header>
-  <div class="text-rose-700 text-center text-8xl bg-blue-600">
-    test acceuiel sur app
-  </div>
+  <main class="bg-cream">
+    <h1 class="m-5 mt-0 text-center font-fredoka text-6xl"><span class="text-red/600"> Faya</span> Festival</h1>
+    <h2 class="m-3 text-center font-fredoka text-3xl">Le Festival</h2>
 
-  
+    <div class="p-5 font-inter">
+      <p>Le FAYA festival ? C’est quoi ?</p>
+      <br />
+      <p>Artistes de prestiges connu par le monde ainsi que certains Artistes locaux .</p>
 
-  
- </header>
+      <p>Cette année nous vous réservons une suprises ...</p>
+    </div>
 
+    <BouttonView> En savoir plus </BouttonView>
+
+    <div class="flex justify-end m-4 items-center">
+      <h2 class="m-3 text-center font-fredoka text-3xl  inline-block ">Ou nous trouvez </h2>
+      <LocationMarkerIcon class="w-8" ></LocationMarkerIcon> 
+    </div>
+    
+    <div class="flex justify-start m-4 items-center">
+      <h2 class="m-3 text-center font-fredoka text-3xl  inline-block ">Nos Invités</h2>
+      <UsersIcon class="w-8" ></UsersIcon> 
+    </div>
+
+
+  </main>
 </template>
 
 <script>
-import head from '../components/head.vue';
+import HeaderView from "../components/HeaderView.vue";
+import BouttonView from "../components/BouttonView.vue";
+import {LocationMarkerIcon , UsersIcon, } from "@heroicons/vue/solid";
 export default {
-  components: { head },};
+  components: { HeaderView, BouttonView,LocationMarkerIcon,UsersIcon },
+};
 </script>

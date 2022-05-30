@@ -6,11 +6,22 @@ module.exports = {
   theme: {
     extend: {
       "colors": {
-        // Ici vos couleurs exportées de Figma
-      },
+        "gris": "#262626",
+        "cream": "#fdba74",
+        "red/600": "#dc2626",
+        "yellow/300": "#fcd34d",
+        "yellow/400": "#fbbf24",
+        "green/800": "#065f46",
+        "warm": "#1C1917",
+        "Blanc": "#FFFFFF",
+        "yellow/500": "F59E0B"
+       },
+
       "fontFamily": {
         // Ici vos familles de polices exportées de Figma
         // Ne pas oublier de les charger dans '/index.html' !
+        "inter": "Inter",
+        "fredoka": "Fredoka One"
       },
     },
 
