@@ -1,7 +1,7 @@
 <template>
     <div class="bg-gris flex items-center justify-between">
         <div class="m-4">
-          <svg width="69" height="60" viewBox="0 0 69 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <RouterLink to="/"><svg width="69" height="60" viewBox="0 0 69 60" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="35" cy="30" r="24" fill="#FDBA74"/>
 <path d="M40.9616 31.301L41.8006 29.7653L45.2 23.5419H48.2554L44.7855 29.7653L43.9405 31.2818L39.4601 39.3166L35.9317 40.508L40.9616 31.301Z" fill="#D13E3E"/>
 <path d="M48.1093 29.7654L46.0521 31.293V31.3011H43.9748L43.9405 31.2819L44.7856 29.7654H48.1093Z" fill="#FFF100"/>
@@ -57,7 +57,7 @@
 <path d="M48.1092 29.7654L46.0521 31.293" stroke="#1D1D1B" stroke-width="0.3" stroke-miterlimit="10"/>
 <path d="M41.4921 24.7708L38.6504 29.7655" stroke="#1D1D1B" stroke-width="0.3" stroke-miterlimit="10"/>
 <path d="M33.082 41.4712L38.3075 31.301" stroke="#1D1D1B" stroke-width="0.3" stroke-miterlimit="10"/>
-</svg>
+</svg></RouterLink>  
         </div>
 
         <MenuIcon class=" m-4 w-12 text-orange-300 "></menuIcon>
