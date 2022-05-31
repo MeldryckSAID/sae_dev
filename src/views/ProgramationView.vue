@@ -7,8 +7,8 @@
         <h2 class="m-3 text-center font-fredoka text-3xl">Programmation</h2>
         <ClockIcon class="w-10"></ClockIcon>
       </div>
-      <div class="mt-5 p-10  items-center">
-        <div class="flex pb-5 justify-center">
+      <div class="mt-5 items-center p-10">
+        <div class="flex justify-center pb-5">
           <Gvjr />
         </div>
         <div class="my-5 flex items-center justify-around">
@@ -22,7 +22,7 @@
           <Gvjr class="rotate-90" />
         </div>
 
-        <div class="flex rotate-180 p-5 justify-center">
+        <div class="flex rotate-180 justify-center p-5">
           <Gvjr />
         </div>
       </div>
