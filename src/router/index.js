@@ -1,5 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import AccueilView from '../views/AccueilView.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import AccueilView from "../views/AccueilView.vue";
 import Mention from "../views/MentionView.vue";
 import Artistes from "../views/ArtistesView.vue";
 import Concert from "../views/ConcertView.vue";
@@ -21,4 +21,4 @@ const router = createRouter({
   ],
 });
 
-export default router
+export default router;

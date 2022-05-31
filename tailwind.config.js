@@ -17,6 +17,12 @@ module.exports = {
         "yellow/500": "F59E0B"
        },
 
+       screens:{
+       ' ipad_mini':'744px',
+       'ipad_pro':'1024px',
+       'desktop':'1440px'
+       },
+
       "fontFamily": {
         // Ici vos familles de polices exportées de Figma
         // Ne pas oublier de les charger dans '/index.html' !
