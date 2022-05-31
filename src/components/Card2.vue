@@ -4,6 +4,7 @@
       <div class="flex flex-col items-center">
       <h3 class="inline-block text-center font-fredoka text-3xl text-gris pb-3">{{ nom }}</h3>
       <vjr />
+      <BouttonView2 >+</BouttonView2>
      
     </div>
     <figure>
@@ -16,12 +17,13 @@
 
 <script>
 import vjr from "./vjr.vue";
+import BouttonView2 from "./BouttonView2.vue";
 
 export default {
   props: {
     nom: String,
     image: String,
   },
-  components: { vjr },
+  components: { vjr, BouttonView2 },
 };
 </script>

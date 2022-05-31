@@ -14,7 +14,7 @@
               font-inter
               font-bold
               text-center
-             text-yellow-400">
+             text-red-600">
     <p><slot /></p>
   </div>
 </div>

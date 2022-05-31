@@ -1,12 +1,12 @@
 <template>
-  <div class="bg-warm text-Blanc text-2xl my-7">
+  <div class="bg-warm text-Blanc text-2xl ">
     <ul class="flex flex-col p-3">
       <li>
         <RouterLink to="/Mention">Mentions Légales</RouterLink>
       </li>
       <li> <RouterLink to="/Contact">Nous contacter</RouterLink></li>
     </ul>
-    <div class="flex justify-between " >
+    <div class="flex justify-between p-5 " >
 
       <Insta/>
       <Facebook/>
