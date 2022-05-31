@@ -37,6 +37,12 @@
       <h2 class="m-3 inline-block text-center font-fredoka text-3xl">Que faire</h2>
       <ClockIcon class="w-8"></ClockIcon>
     </div>
+    <ul class="text-center">
+      <li>16h : Premiere partie</li>
+      <li>18h ; Dj de tout horizons</li>
+      <li>20h Dj Yanou vous chauffe</li>
+      <li>22h : Shensea entre en scene </li>
+    </ul>
 
     <BouttonView> En savoir plus </BouttonView>
 
@@ -44,6 +50,9 @@
       <h2 class="m-3 inline-block text-center font-fredoka text-3xl">Qui Sommes nous ?</h2>
       <QuestionMarkCircleIcon class="w-8"></QuestionMarkCircleIcon>
     </div>
+    <p class="m-4 text-center">
+      Une petite association d’ancien étudiants d’outres-mers ayant connu le dépayesement et la différence entre la métropole et nos territoires d’outres-mers donc voici un petit bout de chez nous .....
+    </p>
 
     <BouttonView> En savoir plus </BouttonView>
     <FooterView />

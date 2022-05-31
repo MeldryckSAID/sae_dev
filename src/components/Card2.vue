@@ -4,6 +4,7 @@
       <h3 class="inline-block pb-3 text-center font-fredoka text-3xl text-gris">{{ nom }}</h3>
       <vjr />
       <BouttonView2>+</BouttonView2>
+      <vjr class="rotate-180" />
     </div>
     <figure>
       <img class="h-48 w-full object-cover" :src="image" alt="" />

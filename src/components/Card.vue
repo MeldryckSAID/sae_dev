@@ -5,6 +5,7 @@
       <figcaption class=""></figcaption>
     </figure>
     <div class="flex flex-col items-center">
+      <vjr class="rotate-180" />
       <h3 class="inline-block pb-3 text-center font-fredoka text-3xl text-gris">{{ nom }}</h3>
       <vjr />
       <BouttonView2>+</BouttonView2>
