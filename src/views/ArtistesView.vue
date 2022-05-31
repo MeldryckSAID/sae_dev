@@ -14,27 +14,27 @@
     </div>
              <Card
                 nom="Buju Banton"
-                image="../public/artiste/buju.png"
+                image="  /artiste/buju.png"
              ></Card>
              <Card2
              nom="DJ Yannou"
-             image="../public/artiste/Yanou.png"
+             image="  /artiste/Yanou.png"
              ></Card2>
                <Card
                 nom="Sheensea"
-                image="../public/artiste/sheensea.png"
+                image="  /artiste/sheensea.png"
              ></Card>
               <Card2
              nom="DJ T'Fiish"
-             image="../public/artiste/fish.png"
+             image="  /artiste/fish.png"
              ></Card2>
               <Card
                 nom="Dj Wall-Ice"
-                image="../public/artiste/wall.png"
+                image="  /artiste/wall.png"
              ></Card>
                            <Card2
              nom="Kalash"
-             image="../public/artiste/Kalash.png"
+             image="  /artiste/Kalash.png"
              ></Card2>
         </main>
 

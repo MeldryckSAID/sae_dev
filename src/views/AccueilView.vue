@@ -32,13 +32,13 @@
  
 <Card
 nom="Buju BANTON"
-image="../public/artiste/Buju.png"
+image=" /artiste/Buju.png"
 
 ></Card>
 
 <Card2
 nom="Sheensea"
-image="../public/artiste/sheensea.png"
+image=" /artiste/sheensea.png"
 ></Card2>
 
 <BouttonView> En savoir plus </BouttonView>
