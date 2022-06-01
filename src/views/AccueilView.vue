@@ -14,9 +14,8 @@
 
       <p>Cette année nous vous réservons une suprises ...</p>
     </div>
-    
-<RouterLink  to="/Festival"><BouttonView> En savoir plus </BouttonView> </RouterLink>
-    
+
+    <RouterLink to="/Festival"><BouttonView> En savoir plus </BouttonView> </RouterLink>
 
     <div class="m-4 flex items-center justify-end">
       <h2 class="m-3 inline-block text-center font-fredoka text-3xl">Ou nous trouvez</h2>
@@ -30,10 +29,9 @@
 
     <Card nom="Buju BANTON" image=" /artiste/Buju.png"></Card>
 
-    <Card2 nom="Sheensea" image=" /artiste/sheensea.png"></Card2>
+    <Card2 to="/Artistes" nom="Sheensea" image=" /artiste/sheensea.png"></Card2>
 
-   
-    <RouterLink  to="/Artistes"><BouttonView> En savoir plus </BouttonView> </RouterLink>
+    <RouterLink to="/Artistes"><BouttonView> En savoir plus </BouttonView> </RouterLink>
 
     <div class="m-4 flex items-center justify-start">
       <h2 class="m-3 inline-block text-center font-fredoka text-3xl">Que faire</h2>
@@ -46,7 +44,7 @@
       <li>22h : Shensea entre en scene</li>
     </ul>
 
-  <RouterLink  to="/Programation"><BouttonView> En savoir plus </BouttonView> </RouterLink>
+    <RouterLink to="/Programation"><BouttonView> En savoir plus </BouttonView> </RouterLink>
 
     <div class="m-4 flex items-center justify-start">
       <h2 class="m-3 inline-block text-center font-fredoka text-3xl">Qui Sommes nous ?</h2>
@@ -57,8 +55,7 @@
       territoires d’outres-mers donc voici un petit bout de chez nous .....
     </p>
 
-   
-    <RouterLink  to="/Contact"><BouttonView> En savoir plus </BouttonView> </RouterLink>
+    <RouterLink to="/Contact"><BouttonView> En savoir plus </BouttonView> </RouterLink>
 
     <FooterView />
   </main>

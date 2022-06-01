@@ -5,7 +5,7 @@
       <vjr />
      <h3 class="inline-block pb-3 text-center font-fredoka text-3xl text-gris">{{ nom }}</h3>
       <vjr class="rotate-180" />
-       <BouttonView2>+</BouttonView2>
+     <router-link :to="to">  <BouttonView2>+</BouttonView2></router-link>
     </div>
     <figure>
       <img class="h-48 w-full object-cover" :src="image" alt="" />
@@ -23,6 +23,10 @@ export default {
   props: {
     nom: String,
     image: String,
+    to:{
+      type:String,
+      default:"/",
+    }
   },
   components: { vjr, BouttonView2 },
 };
