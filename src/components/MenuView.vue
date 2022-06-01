@@ -2,11 +2,11 @@
   <nav>
     <!-- Menu bureau -->
 
-    <div class="bg-warm ">
+    <div class="bg-warm">
       <div class="mx-auto max-w-7xl">
         <div class="flex justify-between">
           <!-- Menu -->
-          <div class="flex space-x-4 ">
+          <div class="flex space-x-4">
             <!-- Logo -->
             <div class="flex items-center py-5 px-2">
               <RouterLink to="/"
@@ -163,23 +163,23 @@
                   <path d="M33.082 41.4712L38.3075 31.301" stroke="#1D1D1B" stroke-width="0.3" stroke-miterlimit="10" /></svg
               ></RouterLink>
             </div>
-            
+
             <!-- Menu -->
 
-            <div class="hidden  items-center   space-x-1 text-white ipad_pro:flex">
-              <div class="flex flex-col items-center   ">
+            <div class="hidden items-center space-x-1 text-white ipad_pro:flex">
+              <div class="flex flex-col items-center">
                 <HomeIcon class="w-9" />
                 <RouterLink class="block py-2 px-4 hover:text-white" to="/">Home</RouterLink>
               </div>
-              <div class="flex flex-col items-center  ">
+              <div class="flex flex-col items-center">
                 <ClockIcon class="w-9" />
                 <RouterLink class="block py-2 px-4 hover:text-white" to="/Programation">Programme</RouterLink>
               </div>
-              <div class="flex flex-col items-center ">
+              <div class="flex flex-col items-center">
                 <UsersIcon class="w-9" />
                 <RouterLink class="block py-2 px-4 hover:text-white" to="/Artistes">Inviter</RouterLink>
               </div>
-              <div class="flex flex-col items-center  ">
+              <div class="flex flex-col items-center">
                 <svg
                   width="101"
                   height="101"
@@ -285,7 +285,7 @@
                 </svg>
                 <RouterLink class="block py-2 px-4 hover:text-white" to="/Festival">Festival</RouterLink>
               </div>
-              <div class="flex flex-col items-center  ">
+              <div class="flex flex-col items-center">
                 <SparklesIcon class="w-9" />
                 <RouterLink class="block py-2 px-4 hover:text-white" to="/Concert">Concert </RouterLink>
               </div>
@@ -309,7 +309,7 @@
     </div>
 
     <!-- Menu mobile -->
-    <div class="top- fixed left-0 z-50 h-screen w-screen bg-gradient-to-tr from-transparent to-black" :class="{ hidden: menuVisible }">
+    <div class="top- fixed left-0 z-50 h-screen w-screen bg-gradient-to-l from-cream to-warm animate-fadeInLeftBig transition duration-1000 ease-out" :class="{ hidden: menuVisible }">
       <div class="fixed top-0 text-black ipad_pro:hidden">
         <div class="flex flex-col items-center border-t-4 border-black bg-cream">
           <HomeIcon class="w-9" />
