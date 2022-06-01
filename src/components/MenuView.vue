@@ -81,6 +81,10 @@
             <SparklesIcon class="w-9" />
             <RouterLink class="block bg-cream py-2 px-4 hover:text-white" to="/Concert">Concert </RouterLink>
           </div>
+          <div class="flex flex-col items-center border-t-4 border-black bg-cream">
+            <SparklesIcon class="w-9" />
+            <RouterLink class="block bg-cream py-2 px-4 hover:text-white" to="/test">test </RouterLink>
+          </div>
         </div>
       </div>
     </Transition>
