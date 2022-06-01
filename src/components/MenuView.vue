@@ -309,7 +309,10 @@
     </div>
 
     <!-- Menu mobile -->
-    <div class="top- fixed left-0 z-50 h-screen w-screen bg-gradient-to-l from-cream to-warm animate-fadeInLeftBig transition duration-1000 ease-out" :class="{ hidden: menuVisible }">
+    <div
+      class="top- fixed left-0 z-50 h-screen w-screen animate-fadeInLeftBig bg-gradient-to-l from-cream to-warm transition duration-1000 ease-out"
+      :class="{ hidden: menuVisible }"
+    >
       <div class="fixed top-0 text-black ipad_pro:hidden">
         <div class="flex flex-col items-center border-t-4 border-black bg-cream">
           <HomeIcon class="w-9" />
