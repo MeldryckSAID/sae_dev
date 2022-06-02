@@ -57,7 +57,9 @@
 
     <RouterLink to="/Contact"><BouttonView> En savoir plus </BouttonView> </RouterLink>
 
-    <FooterView />
+   <footer>
+     <FooterView />
+   </footer> 
   </main>
 </template>
 

@@ -16,6 +16,9 @@
       <Card2 nom="DJ T'Fiish" image="  /artiste/fish.png"></Card2>
       <Card nom="Dj Wall-Ice" image="  /artiste/wall.png"></Card>
       <Card2 nom="Kalash" image="  /artiste/Kalash.png"></Card2>
+
+
+      
     </main>
 
     <footer>
