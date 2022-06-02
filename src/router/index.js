@@ -6,7 +6,7 @@ import Concert from "../views/ConcertView.vue";
 import Festival from "../views/FestivalView.vue";
 import Programation from "../views/ProgramationView.vue";
 import Contact from "../views/ContactView.vue";
-
+import erreur from "../views/404.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,7 +18,8 @@ const router = createRouter({
     { path: "/Festival", name: "Festival", component: Festival },
     { path: "/Programation", name: "Programation", component: Programation },
     { path: "/Contact", name: "Contact", component: Contact },
-  
+    { path: "/:pathMatch(.*)*", name: "erreur", component: erreur },
+
     // ici les autre routes
   ],
 });
