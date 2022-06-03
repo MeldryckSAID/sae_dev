@@ -6,7 +6,7 @@
       <div class="mx-auto max-w-7xl">
         <div class="flex justify-between">
           <!-- Menu -->
-          <div class="flex space-x-4">
+          <div class="flex space-x-9">
             <!-- Logo -->
             <div class="flex items-center py-5 px-2">
               <RouterLink to="/"> <Logo></Logo></RouterLink>
@@ -28,7 +28,7 @@
                 <RouterLink class="block py-2 px-4 hover:text-white" to="/Artistes">Inviter</RouterLink>
               </div>
               <div class="flex flex-col items-center">
-                <LogoB></LogoB>
+                <LogoB class="w-[50px] h-[50px]"></LogoB>
                 <RouterLink class="block py-2 px-4 hover:text-white" to="/Festival">Festival</RouterLink>
               </div>
               <div class="flex flex-col items-center">
@@ -36,7 +36,13 @@
                 <RouterLink class="block py-2 px-4 hover:text-white" to="/Concert">Concert </RouterLink>
               </div>
             </div>
+
+           
           </div>
+
+           <div class="hidden  space-x-1 text-white ipad_pro:flex items-center py-5 px-2">
+              <RouterLink to="/test"> <user class="w-20"></user> </RouterLink>
+            </div>
 
           <!-- Bouton menu -->
           <div class="flex items-center ipad_pro:hidden">
@@ -81,7 +87,14 @@
             <SparklesIcon class="w-9" />
             <RouterLink class="block bg-cream py-2 px-4 hover:text-white" to="/Concert">Concert </RouterLink>
           </div>
+
           
+
+           <div class="flex flex-col items-center border-t-4 border-black bg-cream">
+             <RouterLink to="/test"> <user class="w-20 stroke-black stroke-2 pt-2 "></user> </RouterLink>
+          </div>
+
+         
         </div>
       </div>
     </Transition>
@@ -97,8 +110,9 @@ const menuVisible = ref(false);
 <script>
 import LogoB from "./LogoB.vue";
 import Logo from "./Logo.vue";
-import { HomeIcon, ClockIcon, UsersIcon, SparklesIcon } from "@heroicons/vue/solid";
+import user from "./user.vue";
+import { HomeIcon, ClockIcon, UsersIcon, SparklesIcon, UserIcon } from "@heroicons/vue/solid";
 export default {
-  components: { HomeIcon, ClockIcon, UsersIcon, SparklesIcon, LogoB, Logo },
+  components: { HomeIcon, ClockIcon, UsersIcon, SparklesIcon, LogoB, Logo, user, UserIcon },
 };
 </script>
