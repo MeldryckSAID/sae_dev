@@ -58,7 +58,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text">Les présents</span>
                     </div>
-                    
+
                     <input
                       type="text"
                       class="form-control w-full appearance-none rounded border-2 border-green-500 bg-gray-200 py-2 px-4 leading-tight text-black placeholder:text-black focus:outline-none"
@@ -81,11 +81,12 @@
         </table>
       </div>
     </div>
-    <RouterLink class="block py-2 px-4 hover:text-white" to="/test">test</RouterLink>
-   <RouterLink class="block py-2 px-4 hover:text-white" to="/test2">test2</RouterLink>
-   <RouterLink class="block py-2 px-4 hover:text-white" to="/Ajout">Ajout</RouterLink>
-
-</main>
+    <div class="flex justify-around">
+      <RouterLink class="block rounded-xl border-2 bg-warm py-2 px-4 text-white hover:text-red-600" to="/test">list</RouterLink>
+      <RouterLink class="block rounded-xl border-2 bg-warm py-2 px-4 text-white hover:text-yellow-500" to="/test2">lis +image</RouterLink>
+      <RouterLink class="block rounded-xl border-2 bg-warm py-2 px-4 text-white hover:text-green-400" to="/Ajout">Ajout</RouterLink>
+    </div>
+  </main>
   <footer>
     <FooterView />
   </footer>
@@ -103,12 +104,11 @@ import {
   onSnapshot,
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
-import { 
-    getStorage,             // Obtenir le Cloud Storage
-    ref,                    // Pour créer une référence à un fichier à uploader
-    getDownloadURL,         // Permet de récupérer l'adress complète d'un fichier du Storage
-} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
-
+import {
+  getStorage, // Obtenir le Cloud Storage
+  ref, // Pour créer une référence à un fichier à uploader
+  getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
 
 import HeaderView from "../components/HeaderView.vue";
 import FooterView from "../components/FooterView.vue";
@@ -123,7 +123,6 @@ export default {
       listeParticipantSynchro: [],
       filter: "",
     };
-    
   },
   computed: {
     //Tri des catégories par ordre alpha

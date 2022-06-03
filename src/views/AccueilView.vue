@@ -57,10 +57,11 @@
 
     <RouterLink to="/Contact"><BouttonView> En savoir plus </BouttonView> </RouterLink>
 
-   <footer>
-     <FooterView />
-   </footer> 
+ 
   </main>
+  <footer>
+    <FooterView />
+  </footer>
 </template>
 
 <script>

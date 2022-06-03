@@ -21,20 +21,17 @@
       <Card nom="Dj Wall-Ice" image="  /artiste/wall.png"></Card>
       <Card2 nom="Kalash" image="  /artiste/Kalash.png"></Card2>
 
-       <h2 class="m-3 text-center font-fredoka text-3xl">Mais ou ?</h2>
-       <div class=" p-4 list-disc">
-          <p> Eh bien dans les villes suivantes </p>
-       <ul>
-         <li>Montpellier</li>
-         <li>Bordeaux</li>
-         <li>Rennes</li>
-         <li>Besançons</li>
-       </ul>
-       <p>Nous vous attendons nombreux connaisseurs ou pas </p>
-       </div>
-      
-
-
+      <h2 class="m-3 text-center font-fredoka text-3xl">Mais ou ?</h2>
+      <div class="list-disc p-4">
+        <p>Eh bien dans les villes suivantes</p>
+        <ul>
+          <li>Montpellier</li>
+          <li>Bordeaux</li>
+          <li>Rennes</li>
+          <li>Besançons</li>
+        </ul>
+        <p>Nous vous attendons nombreux connaisseurs ou pas</p>
+      </div>
     </main>
     <FooterView />
   </div>
@@ -47,6 +44,6 @@ import Card from "../components/Card.vue";
 import Card2 from "../components/Card2.vue";
 
 export default {
-  components: { HeaderView, FooterView,Card2,Card },
+  components: { HeaderView, FooterView, Card2, Card },
 };
 </script>

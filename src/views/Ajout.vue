@@ -76,11 +76,12 @@
             </button>
           </div>
         </div>
-      </form>
+      </form> <div class="flex justify-around ">
+   <RouterLink class="block border-2 rounded-xl bg-warm text-white  py-2 px-4 hover:text-red-600" to="/test">list</RouterLink>
+   <RouterLink class="block border-2 rounded-xl bg-warm text-white py-2 px-4 hover:text-yellow-500" to="/test2">lis +image</RouterLink>
+   <RouterLink class="block border-2 rounded-xl bg-warm  text-white py-2 px-4 hover:text-green-400" to="/Ajout">Ajout</RouterLink>
+
     </div>
-       <RouterLink class="block py-2 px-4 hover:text-white" to="/test">test</RouterLink>
-   <RouterLink class="block py-2 px-4 hover:text-white" to="/test2">test2</RouterLink>
-   <RouterLink class="block py-2 px-4 hover:text-white" to="/Ajout">Ajout</RouterLink>
   </main>
   <footer>
     <FooterView />

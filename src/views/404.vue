@@ -4,19 +4,19 @@
   </header>
 
   <main class="bg-warm">
-
     <div class="flex justify-center">
-      <Logo class="w-[200px] h-[200px]"></Logo>
+      <Logo class="h-[200px] w-[200px]"></Logo>
     </div>
-   
- 
-      <h1 class="m-5 mt-0 p-20 text-center font-fredoka text-4xl text-cream">Faya Festival <br> <span class="text-red-600">Te présente ces excuses</span> </h1>
-      <div class="flex justify-center items-center py-10">
-        <EmojiSadIcon class="text-green-800 w-15"></EmojiSadIcon>
-        <EmojiSadIcon class="text-yellow-400 w-15"></EmojiSadIcon>
-        <EmojiSadIcon class="text-red-600 w-15"></EmojiSadIcon>
-      </div>
-   
+
+    <h1 class="m-5 mt-0 p-20 text-center font-fredoka text-4xl text-cream">
+      Faya Festival <br />
+      <span class="text-red-600">Te présente ces excuses</span>
+    </h1>
+    <div class="flex items-center justify-center py-10">
+      <EmojiSadIcon class="w-15 text-green-800"></EmojiSadIcon>
+      <EmojiSadIcon class="w-15 text-yellow-400"></EmojiSadIcon>
+      <EmojiSadIcon class="w-15 text-red-600"></EmojiSadIcon>
+    </div>
   </main>
 
   <footer>

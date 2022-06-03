@@ -10,6 +10,8 @@ import erreur from "../views/404.vue";
 import test from "../views/test.vue";
 import test2 from "../views/test2.vue";
 import Ajout from "../views/Ajout.vue";
+
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -24,7 +26,7 @@ const router = createRouter({
     { path: "/test", name: "test", component: test },
     { path: "/test2", name: "test2", component: test2 },
     { path: "/Ajout", name: "Ajout", component: Ajout },
-
+ 
     // ici les autre routes
   ],
 });
