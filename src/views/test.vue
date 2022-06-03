@@ -81,7 +81,11 @@
         </table>
       </div>
     </div>
-  </main>
+    <RouterLink class="block py-2 px-4 hover:text-white" to="/test">test</RouterLink>
+   <RouterLink class="block py-2 px-4 hover:text-white" to="/test2">test2</RouterLink>
+   <RouterLink class="block py-2 px-4 hover:text-white" to="/Ajout">Ajout</RouterLink>
+
+</main>
   <footer>
     <FooterView />
   </footer>

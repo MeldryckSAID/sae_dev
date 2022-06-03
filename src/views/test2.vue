@@ -59,7 +59,7 @@
                       <span class="input-group-text">Les présents</span>
                     </div>
 
-                    <img class="center h-48 w-72 rounded-t-lg object-cover" :src="participant.participant" alt="imgalt" />
+                    <img class="center h-48 w-72 rounded-t-lg object-cover" :src="participant.photo" alt="imgalt" />
 
                     <input
                       type="text"
@@ -83,6 +83,10 @@
         </table>
       </div>
     </div>
+
+    <RouterLink class="block py-2 px-4 hover:text-white" to="/test">test</RouterLink>
+    <RouterLink class="block py-2 px-4 hover:text-white" to="/test2">test2</RouterLink>
+    <RouterLink class="block py-2 px-4 hover:text-white" to="/Ajout">Ajout</RouterLink>
   </main>
   <footer>
     <FooterView />
@@ -117,7 +121,7 @@ export default {
   data() {
     return {
       nom: null,
-      listeParticipantSynchro: [], 
+      listeParticipantSynchro: [],
       filter: "",
       photo: null,
     };
@@ -136,6 +140,7 @@ export default {
       if (this.filter.length > 0) {
         let filter = this.filter.toLowerCase();
         return this.orderByNom.filter(function (participant) {
+          //console.log("participant", participant.participant);
           return participant.nom.toLowerCase().includes(filter);
         });
       } else {
@@ -162,11 +167,12 @@ export default {
 
         this.listeParticipantSynchro.forEach(function (participant) {
           const storage = getStorage();
-          const spaceRef = ref(storage, "participant/" + participant.participant);
+          const spaceRef = ref(storage, "participant/" + participant.photo);
+          //const spaceRef = ref(storage, "participant/buju.png");
           getDownloadURL(spaceRef)
             .then((url) => {
-              participant.participant = url;
-              console.log("participant", participant);
+              participant.photo = url;
+              // console.log("participant", participant);
             })
             .catch((error) => {
               console.log("erreur downloadUrl", error);

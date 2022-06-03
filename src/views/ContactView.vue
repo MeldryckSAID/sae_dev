@@ -81,6 +81,9 @@
           <BouttonView>Envoyer</BouttonView>
         </form>
       </div>
+      <div>
+        <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747580.302048028!2d117.83488022145679!3d23.46961085381541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ef3065c07572f%3A0xe711f004bf9c5469!2sTaiwan!5e0!3m2!1sen!2sfr!4v1654257083394!5m2!1sen!2sfr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </main>
 
     <footer>
