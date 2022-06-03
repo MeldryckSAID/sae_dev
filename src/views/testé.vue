@@ -58,7 +58,13 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text">Les présents</span>
                     </div>
-                    
+
+                    <img
+                          class="center h-48 w-72 rounded-t-lg object-cover"
+                          :src="artiste.participant"
+                          alt="imgalt"
+                        />
+
                     <input
                       type="text"
                       class="form-control w-full appearance-none rounded border-2 border-green-500 bg-gray-200 py-2 px-4 leading-tight text-black placeholder:text-black focus:outline-none"
@@ -158,6 +164,20 @@ export default {
         // on identifie clairement le id du document
         // les rest parameters permet de préciser la récupération de toute la partie data
         this.listeArtisteSynchro = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+       
+       this.listeArtisteSynchro.forEach(function (artiste) {
+          const storage = getStorage();
+          const spaceRef = ref(storage, "participant/" + artiste.participant);
+          getDownloadURL(spaceRef)
+            .then((url) => {
+              artiste.participant = url;
+              console.log("artiste", artiste);
+            })
+            .catch((error) => {
+              console.log("erreur downloadUrl", error);
+            });
+        });
+        
       });
     },
     async createArtiste() {
@@ -165,6 +185,7 @@ export default {
       const dbArtiste = collection(firestore, "artiste");
       const docRef = await addDoc(dbArtiste, {
         nom: this.nom,
+        participant: this.participant,
       });
       console.log("document crée avec le id : ", docRef.id);
     },
@@ -173,6 +194,7 @@ export default {
       const docRef = doc(firestore, "artiste", artiste.id);
       await updateDoc(docRef, {
         nom: artiste.nom,
+        participant: artiste.participant,
       });
     },
     async deleteArtiste(artiste) {

@@ -8,6 +8,7 @@ import Programation from "../views/ProgramationView.vue";
 import Contact from "../views/ContactView.vue";
 import erreur from "../views/404.vue";
 import test from "../views/test.vue";
+import testé from "../views/testé.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,6 +22,7 @@ const router = createRouter({
     { path: "/Contact", name: "Contact", component: Contact },
     { path: "/:pathMatch(.*)*", name: "erreur", component: erreur },
     { path: "/test", name: "test", component: test },
+    { path: "/testé", name: "testz", component: testé },
 
     // ici les autre routes
   ],
