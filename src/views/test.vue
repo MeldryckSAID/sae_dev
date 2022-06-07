@@ -24,7 +24,7 @@
             required
           />
 
-          <BouttonView class="btn btn-light" type="button" @click="createParticipant()" title="Création"> Ajouter </BouttonView>
+          <button class="btn btn-light" type="button" @click="createParticipant()" title="Création"> Ajouter </button>
         </div>
       </form>
 
@@ -44,7 +44,7 @@
                       class="form-control w-full appearance-none rounded border-2 border-red-600 bg-gray-200 py-2 px-4 leading-tight text-black placeholder:text-black focus:border-green-500 focus:bg-white focus:outline-none"
                       v-model="filter"
                     />
-                    <BouttonView class="btn btn-light" type="button" @click="createParticipant()" title="Création"> Ajouter </BouttonView>
+                    <button class="btn btn-light" type="button" @click="createParticipant()" title="Création"> Ajouter </button>
                   </div>
                 </span>
               </th>
